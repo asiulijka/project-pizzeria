@@ -12,6 +12,9 @@ class AmountWidget extends BaseWidget{
     thisWidget.getElements(element);
     // thisWidget.setValue(thisWidget.dom.input.value);
     thisWidget.initActions();
+
+    // console.log('AmountWidget', thisWidget);
+    // console.log('constructor arguments:',);
   }
 
   getElements(){
@@ -21,35 +24,6 @@ class AmountWidget extends BaseWidget{
     thisWidget.dom.linkDecrease = thisWidget.dom.wrapper.querySelector(select.widgets.amount.linkDecrease);
     thisWidget.dom.linkIncrease = thisWidget.dom.wrapper.querySelector(select.widgets.amount.linkIncrease);
   }
-
-  // setValue(value){
-  //   const thisWidget = this;
-  //
-  //   const newValue = thisWidget.parseValue(value);
-  //
-  //   /* TODO Add validation - MOJ KOD*/
-  //   // if (thisWidget.value !== newValue && !isNaN(newValue)){
-  //   //   if (newValue >= settings.amountWidget.defaultMin && newValue <= settings.amountWidget.defaultMax){
-  //   //     thisWidget.value = newValue;
-  //   //     thisWidget.announce();
-  //   //   }
-  //   // }
-  //
-  //   // KOD KODILLI
-  //   // if(newValue != thisWidget.value && newValue >=settings.amountWidget.defaultMin && newValue <= settings.amountWidget.defaultMax){
-  //   //   thisWidget.value=newValue;
-  //   //   thisWidget.announce();
-  //   // }
-  //
-  //
-  //   // FILM KODILLI
-  //   if(newValue != thisWidget.value && thisWidget.isValid(newValue)){
-  //     thisWidget.value = newValue;
-  //     thisWidget.announce();
-  //   }
-  //
-  //   thisWidget.renderValue();
-  // }
 
   isValid(value){
     return !isNaN(value)
@@ -62,7 +36,6 @@ class AmountWidget extends BaseWidget{
 
     thisWidget.dom.input.value = thisWidget.value;
   }
-
 
   initActions(){
     const thisWidget = this;
@@ -77,8 +50,6 @@ class AmountWidget extends BaseWidget{
       thisWidget.setValue(thisWidget.value+1);
     });
   }
-
-
 }
 
 export default AmountWidget;
