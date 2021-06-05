@@ -113,7 +113,8 @@ const app = {
 
     const bookingWidget = document.querySelector(select.containerOf.booking);
 
-    const newBooking = new Booking(bookingWidget);
+    // const newBooking = new Booking(bookingWidget);
+    new Booking(bookingWidget);
   },
 
   init: function(){
