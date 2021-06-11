@@ -118,11 +118,11 @@ const app = {
     new Booking(bookingWidget);
   },
 
-  initHome: function(){
+  initHome: function(thisApp){
     const homeWidget = document.querySelector(select.containerOf.home);
 
     // const newBooking = new Booking(bookingWidget);
-    new Home(homeWidget);
+    new Home(homeWidget, thisApp);
   },
 
   init: function(){
@@ -131,7 +131,7 @@ const app = {
     thisApp.initData();
     thisApp.initCart();
     thisApp.initBooking();
-    thisApp.initHome();
+    thisApp.initHome(thisApp);
   },
 
 };

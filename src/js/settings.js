@@ -76,6 +76,11 @@ export const select = {
     edit: '[href="#edit"]',
     remove: '[href="#remove"]',
   },
+  home: {
+    carousel: '.carousel',
+    orderButton: '#order_button',
+    bookingButton: '#booking_button',
+  },
 };
 
 export const classNames = {
@@ -130,6 +135,16 @@ export const settings = {
     dateEndParamKey: 'date_lte',
     notRepeatParam: 'repeat=false',
     repeatParam: 'repeat_ne=false',
+  },
+  home: {
+    carousel: {
+      interval: 1,
+    },
+  },
+  url: {
+    host: 'http://localhost:3000',
+    orders: 'orders',
+    booking: 'booking',
   },
 };
 
