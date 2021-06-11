@@ -4,25 +4,14 @@
 
 .intro_image_box img{
   height: 100px;
-  // transition: all 2s;
 }
 
 .intro_image_box .intro-image-text p {
-  top: 0%;
   display: none;
-  height: 0%;
-  width: 50%;
-  // transition: width 2s;
 }
 
 .intro_image_box:hover .intro-image-text p {
-  top: 100%;
   display: block;
-  height: 100%;
-  width: 100%;
-  transition-duration: 4s;
-  // transition: all 3s;
-  // transition: width 5s;
 }
 
 .intro-image-text {

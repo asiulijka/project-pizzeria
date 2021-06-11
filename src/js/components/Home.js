@@ -6,7 +6,6 @@ class Home{
     thisHome.app = app;
 
     thisHome.render(homeContainerElem);
-    // thisHome.setupCarousel();
     thisHome.initListeners();
   }
 
@@ -27,14 +26,6 @@ class Home{
     thisHome.navLinks = document.querySelectorAll(select.nav.links);
   }
 
-  // setupCarousel(){
-  //   const thisHome = this;
-  //
-  //   // thisHome.dom.carousel.carousel({
-  //   //   interval: settings.home.carousel.interval
-  //   // });
-  // }
-
   initListeners(){
     const thisHome = this;
     const app = thisHome.app;
@@ -51,7 +42,6 @@ class Home{
       app.activatePage('booking');
     });
   }
-
 
 }
 
