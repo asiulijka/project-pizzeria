@@ -40,16 +40,31 @@ img {
 }
 
 .carousel-indicators li {
-    background: $color-dark;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    border: 0;
-    margin: $base-size *0.5;
+  background: $color-dark;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  border: 0;
+  margin: $base-size *0.5;
 }
 
 .gallery-image-icons i {
-    color: $color-main;
-    padding: $base-size *0.5;
-    font-size: ($base-size * 2);
+  color: $color-light;
+  padding: $base-size *0.5;
+  font-size: ($base-size * 2);
+  transform: scale(0.0);
+  transition: all 2s;
+}
+
+.gallery_image_box:hover img {
+  opacity: 0.8;
+}
+
+.gallery_image_box:hover .gallery-image-icons i {
+  transform: scale(1.0);
+}
+
+.gallery_image_box:hover .gallery-image-icons i:hover {
+  color: $color-main;
+  transform: scale(1.2);
 }
