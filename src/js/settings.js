@@ -143,7 +143,8 @@ export const settings = {
     },
   },
   url: {
-    host: 'http://localhost:3000',
+    // host: 'http://localhost:3000',
+    host: '//' + window.location.hostname + (window.location.hostname=='localhost' ? ':3000' : ''),
     orders: 'orders',
     booking: 'booking',
   },
